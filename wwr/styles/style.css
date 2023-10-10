@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Amita&family=Istok+Web&display=swap');
+
+
 body {
     background-color: #F0F3BD;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
 }
 
 header {
@@ -15,6 +25,7 @@ nav a {
     text-align: center;
     color: #EDB50C;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -42,6 +53,10 @@ main section {
     background-color: #05668D;
     color: #EDB50C;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -55,6 +70,8 @@ main section {
 
 .msg {
     background-color: #05668D;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
@@ -63,11 +80,15 @@ main section {
 
 .msg p {
     color: #F0F3BD;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer {
     background-color: #02C39A;
     color: black;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer p {
@@ -75,16 +96,24 @@ footer p {
 }    
 
 footer a {
-    text-decoration: none;
+    text-decoration: underline #EDB50C;
 }
 
-footer p, footer a:hover {
+#footerText, footer a:hover {
     text-decoration: underline;
+}
+
+footer, .social, img{
+    padding-top: 15px;
 }
 
 #links a {
     background-color: #05668D;
     color: #EDB50C;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 #links a:hover {
@@ -104,10 +133,40 @@ h4 {
     width: 80px;
 }
 
+#logo_link{
+    padding-top: 5px;
+}
+
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img{
     width: 100%;
+}
+
+h1, h4, h2{
+    font-family:"Amita", Helvetica, sans-serif;
+}
+
+p, nav, .book, .join{
+    font-family:"Istok Web", Helvetica, sans-serif;
+}
+
+.home-title{
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
+.card-img{
+    border: 10px solid #02C39A;;
+}
+
+main section img{
+    box-sizing: border-box;
 }

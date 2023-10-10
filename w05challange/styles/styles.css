@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+}
+
+#background{
+    width: 100%;
+}
+
+#imageSection{
+    background-color: #737373;
+    text-align: center;
+}
+
+.circleImage{
+    border-radius: 50%;
+    border: 20px solid #444444;
+    display: inline-block;
+    width: 15%;
+    margin: 100px 150px;
+}
