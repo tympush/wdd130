@@ -266,7 +266,18 @@ main section img{
 
 
 
-
+#rates-title{
+    color: white;
+    font-family:"Amita", Helvetica, sans-serif;
+    text-align: center;
+    font-size: 38px;
+}
+#rates-title-box{
+    background-color: #00a897b6;
+    width: 280px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
 
 #gridgrid{
     display: grid;
