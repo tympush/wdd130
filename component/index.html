@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    
+    <button class="accordion">Shark Fact 1</button>
+    <div class="panel">
+      <p>Diverse Species: There are over 500 different species of sharks, and they come in various shapes and sizes. From the massive whale shark, which is the largest fish in the world, to the relatively small dwarf lanternshark, sharks display a remarkable diversity in their adaptations to different environments.</p>
+    </div>
+    
+    <button class="accordion">Shark Fact 2</button>
+    <div class="panel">
+      <p>Ancient Predators: Sharks are ancient creatures that have been around for a very long time. Fossil evidence suggests that sharks have existed for more than 400 million years, making them older than dinosaurs. They have survived several mass extinction events and have evolved into highly efficient predators.</p>
+    </div>
+    
+    <button class="accordion">Shark Fact 3</button>
+    <div class="panel">
+      <p>Constant Movement: Many shark species are obligate ram ventilators, which means they must keep swimming to breathe. Unlike some fish that can pump water over their gills while stationary, sharks rely on forward motion to force water over their gills for respiration. This constant movement is crucial for their survival, and some sharks, like the great white shark, are known for their long-distance migrations across ocean basins.</p>
+    </div>
+
+
+
+    <style>
+        .panel {
+          padding: 0 18px;
+          background-color: white;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+        }
+    </style>
+        
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+    </script>
+
+
+</body>
+</html>
