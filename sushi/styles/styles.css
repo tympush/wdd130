@@ -349,7 +349,6 @@ footer p{
 #restaurantParagraph1, #restaurantParagraph3{
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr;
     padding-bottom: 85px;
 }
 
@@ -362,7 +361,7 @@ footer p{
     grid-row: 1/4;
 }
 #restaurantParagraph1text, #restaurantParagraph3text{
-    background-color: #d2ffcecc;
+    background-color: #d2ffceee;
     border-radius: 15px;
     text-align: center;
     line-height: 1.5em;
@@ -385,7 +384,6 @@ footer p{
 #restaurantParagraph2{
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr;
     padding-bottom: 85px;
 }
 
@@ -426,12 +424,149 @@ footer p{
 
 
 
+.menuSubTitle{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+#menuIndividualBlock{
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    padding-bottom: 150px;
+}
+#menuIndividualBlock img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px black;
+    grid-column: 1/3;
+    grid-row: 1/6;
+}
+#menuIndividualBlock p:nth-of-type(1){
+    background-color: #d2ffceee;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    transition: transform .5s;
+}
+#menuIndividualBlock p:nth-of-type(2){
+    background-color: #d2ffceee;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 2/4;
+    grid-row: 4/5;
+    transition: transform .5s;
+}
+#menuIndividualBlock p:nth-of-type(1):hover, #menuIndividualBlock p:nth-of-type(2):hover{
+    color: #FF7F7F;
+    text-shadow: 0 0 20px #FFD700;
+    transition: color 0.5s ease;
+    transform: scale(1.1);
+    transition: transform .5s;
+}
 
 
 
-@media screen and (max-width: 900px) {
+#menuSetsBlock{
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    padding-bottom: 150px;
+}
+#menuSetsBlock img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px black;
+    grid-column: 2/4;
+    grid-row: 1/6;
+}
+#menuSetsBlock p:nth-of-type(1){
+    background-color: #d2ffceee;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    transition: transform .5s;
+}
+#menuSetsBlock p:nth-of-type(2){
+    background-color: #d2ffceee;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 1/3;
+    grid-row: 4/5;
+    transition: transform .5s;
+}
+#menuSetsBlock p:nth-of-type(1):hover, #menuSetsBlock p:nth-of-type(2):hover{
+    color: #FF7F7F;
+    text-shadow: 0 0 20px #FFD700;
+    transition: color 0.5s ease;
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
+
+
+#menuIndividualBanner, #menuSetsBanner{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    padding-bottom: 85px;
+}
+#menuSetsBanner{
+    padding-bottom: 150px;
+}
+#menuIndividualBanner img, #menuSetsBanner img{
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/4;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px black;
+}
+#menuIndividualBanner p, #menuSetsBanner p{
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 3/5;
+    background-color: #d2ffceee;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.5em;
+    padding: 35px;
+    transition: transform .5s;
+}
+#menuIndividualBanner p:hover, #menuSetsBanner p:hover{
+    color: #FF7F7F;
+    text-shadow: 0 0 20px #FFD700;
+    transition: color 0.5s ease;
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
     
-    #homeImageRow, #homeMeat, #restaurantImageRow, #restaurantParagraph1, #restaurantParagraph2, #restaurantParagraph3{
+    #homeImageRow, #homeMeat, #restaurantImageRow, #restaurantParagraph1, #restaurantParagraph2, #restaurantParagraph3, #menuIndividualBlock, #menuSetsBlock, #menuIndividualBanner, #menuSetsBanner{
         display: block;
         height: auto;
     }
@@ -458,16 +593,16 @@ footer p{
         width: 60%;
     }
 
-    #homeMeat img, #restaurantParagraph1image, #restaurantParagraph2image, #restaurantParagraph3image{
+    #homeMeat img, #restaurantParagraph1image, #restaurantParagraph2image, #restaurantParagraph3image, #menuIndividualBlock img, #menuSetsBlock img, #menuIndividualBanner img, #menuSetsBanner img{
         display: block;
         margin: 50px auto;
         width: 80%;
     }
 
-    #homeMeat p, #introText, #restaurantParagraph1text, #restaurantParagraph2text, #restaurantParagraph3text{
+    #homeMeat p, #introText, #restaurantParagraph1text, #restaurantParagraph2text, #restaurantParagraph3text, #menuIndividualBlock p, #menuSetsBlock p, #menuIndividualBanner p, #menuSetsBanner p{
         display: block;
         margin: 50px auto;
-        width: 70%;
+        width: 65%;
     }
 
     #introTitle, .subpageTitle{
