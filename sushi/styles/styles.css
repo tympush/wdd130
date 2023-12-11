@@ -617,4 +617,13 @@ footer p{
         padding-bottom: 5px;
         padding-top: 0px;
     }
+
+    .social img{
+        width: 40%;
+        height: 40%;
+    }
+
+    footer p{
+        font-size: 16px;
+    }
 }
