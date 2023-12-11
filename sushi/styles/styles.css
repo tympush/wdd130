@@ -520,10 +520,12 @@ footer p{
 #menuIndividualBanner, #menuSetsBanner{
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
-    padding-bottom: 85px;
+}
+#menuIndividualBanner{
+    padding-bottom: 25px;
 }
 #menuSetsBanner{
-    padding-bottom: 150px;
+    padding-bottom: 85px;
 }
 #menuIndividualBanner img, #menuSetsBanner img{
     width: 100%;
@@ -609,5 +611,10 @@ footer p{
         display: block;
         margin: 50px auto;
         width: 70%;
+    }
+
+    #introText, #homeMeat, #restaurantParagraph1, #restaurantImageRow, #restaurantParagraph2, #restaurantParagraph3, #menuIndividualBlock, #menuSetsBlock, #menuIndividualBanner, #menuSetsBanner{
+        padding-bottom: 5px;
+        padding-top: 0px;
     }
 }
